@@ -1,17 +1,17 @@
-import { Players } from './shared/ListOfPlayers'
-export default function Player() {
+import React from 'react'
+export default function PlayersPresentation({ players }) {
+   console.log(players);
    return (
       <div className='container'>
-         {Players.map((player) => (
-            <div className='column'>
-               <div key={player.id} className='card'>
+         {players.map((player) => (
+            <div key={player.id} className='column'>
+               <div className='card'>
                   <img src={player.img} />
                   <h3>{player.name}</h3>
                   <p className='title'>{player.club}</p>
                   <p><button>Detail</button></p>
                </div>
             </div>
-         ))}
-      </div>
+         ))}</div>
    )
 }
