@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Players } from './shared/ListOfPlayers'
+import { Players } from '../shared/ListOfPlayers'
 export default function Player() {
    const [player, setPlayer] = useState([])
    return (

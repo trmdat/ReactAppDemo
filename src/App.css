@@ -40,14 +40,14 @@
 .ul {
   display: flex;
   justify-content: flex-start;
-  background-color: black;
+  /* background-color: black; */
 }
 li {
   list-style-type: none;
   margin: 5px 20px 5px 0;
 }
 li a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
 
@@ -139,4 +139,10 @@ img {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.mode {
+  position: relative;
+  left: 1200px;
+  bottom: 40px;
 }
