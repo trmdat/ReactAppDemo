@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Players } from '../shared/ListOfPlayers'
+import { Link } from 'react-router-dom'
 export default function Player() {
    const [player, setPlayer] = useState([])
    return (
@@ -10,7 +11,10 @@ export default function Player() {
                   <img src={player.img} />
                   <h3>{player.name}</h3>
                   <p className='title'>{player.club}</p>
-                  <button onClick={() => { setPlayer(player) }}><a href='#popup1' id='openPopUp'>Detail</a></button>
+                  {/* <button onClick={() => { setPlayer(player) }}><a href='#popup1' id='openPopUp'>Detail</a></button> */}
+                  <Link to={`detail/${player.id}`}>
+                     <p><button>Detail</button></p>
+                  </Link>
                </div>
             </div>
          ))}

@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './components/ThemeContext';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <ThemeProvider>
+  // <ThemeProvider>
+  <BrowserRouter>
     <App />
-  </ThemeProvider>
-  // </React.StrictMode>
+  </BrowserRouter>
+  // </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
